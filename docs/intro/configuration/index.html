@@ -62,8 +62,10 @@ datasource:
     url: jdbc:postgresql://${myDatabaseHost}:5432/my_app
     driver: org.postgresql.Driver
 
-  ## Expects system properties to be set for:
+  ## Expects system properties (or enviroment variables) to be set for:
   ## myPassword and myDatabaseHost
+  ## 
+  ## Also you can specify a default value: ${myPassword:test}
 </pre>
 
 
